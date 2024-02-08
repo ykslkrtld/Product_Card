@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #E1E1E1
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    height: 80vh;
+    margin: 50px auto;
+    /* gap: 2rem; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.img{
+    width: 50%;
+}
+
+.img img{
+    width: 100%;
+}
+
+.info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+header h1{
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(51, 51, 51);
+}
+
+header h3{
+    font-weight: 500;
+    font-size: 19px;
+    color: rgb(68, 68, 68);
+}
+
+.p_info{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+}
+
+.p_info h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+
+.p_info p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(68, 68, 68);
+}
+
+.storage h3{
+    color: rgb(68, 68, 68);
+}
+
+.storage nav{
+    display: flex;
+    gap: 1rem;
+}
+
+.storage nav button{
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.sbutton{
+    background-color: #2074F5;
+    color: white;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price button{
+    width: 12rem;
+    height: 3rem;
+    background-color: #2074F5;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.price p{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        background-color: white;
+    }
+    
+    .container{
+        flex-direction: column;
+    }
+    .img, .info{
+        width: 90%;
+}
+}
+
